@@ -14,3 +14,14 @@ function getFibo(n){
     return numbers;
 }
 getFibo(10); 
+
+//2. Function to random Order 
+function randomOrder(n){
+    let randoms = [];
+    for(let i=1; i<=n; i++){
+        randoms.push(i); 
+    } 
+    randoms = randoms.sort(r =>  Math.random() - 0.5);
+    return randoms; 
+} 
+randomOrder(10);
